@@ -17,3 +17,15 @@ if(x%2==0):
     print(a,' is even')
 else:
     print(a,' is odd')
+
+
+# simple if
+
+# gen = "M"
+# if(gen=="M"): print('male')
+# else: print ('female')
+
+#single line if
+gender = "M"
+a = "Male" if gender == "M" else "Female"
+print(a)

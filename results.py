@@ -1,5 +1,7 @@
-a = int(input('Enter the percentage scored by a student: '))
-if(a>=80):
+a = float(input('Enter the percentage scored by a student: '))
+if(a>100 or a<0):  
+    print('You entered invalid input')
+elif(100>a>=80):
     print('Distinction')
 elif(a>=60 and a<80):
     print('First division')
