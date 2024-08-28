@@ -16,4 +16,3 @@ if(percentage>=40):
 else:
     print("The Student has failed")
 
-
