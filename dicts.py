@@ -96,11 +96,27 @@ print(test)
 name = input('Enter your name: ')
 address = input('Enter your address: ')
 number = int(input('Enter your number: '))
+gender = name = input('Enter your gender: ')
+sts = name = input('Enter your marietal status: ')
+
 
 a = {
     'name':name,
     'address':address,
-    'number':number
+    'number':number,
+    'gender':gender,
+    'Marietal Status':sts
+
 }
-print('added to dictionary')
+print('Your input is successfully added to dictionary')
 print(a)
+
+#alternative method
+x = {}
+x['name']=input('Enter your name: ')
+x['address']=input('Enter your surname: ')
+x['number']=int(input('Enter your contact number: '))
+x['gender']=(input('Enter your age: '))
+x['sts']=input('Enter your marietal status: ')
+print('Your input is successfully added to dictionary')
+print(x)
