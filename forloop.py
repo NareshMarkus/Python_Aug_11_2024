@@ -33,16 +33,38 @@ for i in range(10,0,-1):
 #classwork
 print('_____________________________________________')
 a = range(0,3)
-x =['suddan','test','broadway']
+x =['Naresh','test','broadway']
 for i in a:
     print(x[i])
+print('\n')
 
 #alternative
 print('_____________________________________________')
 x =['suddan','test','broadway']
 for i in range(0,len(x)):
     print(x[i])
+print('\n')
 
-#assignment(table of 2)
+#assignment(Multiplication table)
+x = int(input('Enter the number you want table of: '))
+print('\n')
+print(f'______Multiplication table of {x}______')
 for j in range(1,11):
-    print(f'2 X {j} = {2*j}')
+    print(f'{x} X {j} = {x*j}')
+
+
+#nested for loop
+for i in [1,2]:
+    for j in [3,4]:
+        print (i,j)
+
+#Exercise
+print('_________________________________\n')
+a = [2,3,5]
+for i in a:
+    print(f'Multiplication table of {i}')
+    for j in range(1,11):
+        print(f'{i} x {j} = {i*j}')
+
+
+    
