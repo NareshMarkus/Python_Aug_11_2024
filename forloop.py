@@ -1,3 +1,4 @@
+'''
 for i in [1,2,3,4,5]:
     print(i)
     a={}
@@ -67,4 +68,17 @@ for i in a:
         print(f'{i} x {j} = {i*j}')
 
 
-    
+a = [1,2,3,4,5]
+sum = 0
+for i in a:
+    sum = sum + i
+print(sum)
+'''    
+
+x = []
+for i in range(4):
+    x.append(i)
+
+    print (f'{x[i]} ')
+    for j in range(1,6):
+        pass
