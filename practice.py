@@ -43,3 +43,19 @@ while i<=x:
 print(f'The sum of first {x} natural numbers is {sum}')
 print('')
 
+# hit or miss game
+import random
+score = 100
+count = 1
+while count<=10:
+    a = random.randrange(1,10)
+    if(a%2==0):
+        print('Hit')
+        score = score + 20
+    else:
+        print('Miss')
+        score = score - 20
+    count = count + 1
+    if(score==200 or score==0):
+        break
+print(f'Score = {score}')
