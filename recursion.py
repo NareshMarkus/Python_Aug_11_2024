@@ -37,3 +37,16 @@ def sum_natural(n):
     else:
         return n + sum_natural(n-1)
 print(sum_natural(10))
+
+
+# tri recursion
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
