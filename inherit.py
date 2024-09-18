@@ -1,11 +1,10 @@
 '''
 class Parent():
-    a = 10
-    b = 15
 
-    def __init__(self,a,b) -> None:
-        self.a = 50
-        self.b = 45
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
     def add(self):
         return self.a+self.b
     def subtract(self):
@@ -13,20 +12,18 @@ class Parent():
 
 
 class Child(Parent):
-    
-    def __init__(self,c,d) -> None:
-        Parent.__init__(self)
-        self.c = 20
-        self.d = 10
-
+    def __init__(self, a, b):
+        super().__init__(a, b)
     def mul(self):
-        return self.c*self.d
+        return self.a*self.b
     def div(self):
-        return self.d/self.c
+        return self.a/self.b
 
-obj = Child()
-print(obj.mul())
+obj = Child(20,5)
 print(obj.add())
+print(obj.subtract())
+print(obj.mul())
+print(obj.div())
 '''
 
 '''
